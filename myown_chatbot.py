@@ -1,4 +1,5 @@
 import os
+import requests
 from rasa_core.channels.rasa_chat import RasaChatInput
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
