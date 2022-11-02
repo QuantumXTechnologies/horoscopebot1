@@ -1,0 +1,29 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greeting, How is you?, How are you?",
+        "text": "Hello ,Hi , mambo"
+      },
+      {
+        "intent": "get_horoscope",
+        "text": "I want to know my Horoscope, , Can I know my Horoscope?, Which is my horoscope"
+      },
+      {
+        "intent": "get_horoscope",
+        "text": "Can you please tell me my horoscope?, In to know my horoscope."
+      },
+      {
+        "intent": "subscription",
+        "text": "Please subscribe me, subscribe for more info"
+      },
+      {
+        "intent": "welcome again , Thank you as well",
+        "text": "Thanks , blessed , Thank you, Thanks giving"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
