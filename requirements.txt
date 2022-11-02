@@ -1,4 +1,4 @@
-rasa_nlu==0.15.1
-rasa-core==0.14.5
-tensorflow==1.13.2
+rasa_nlu
+rasa-core
+tensorflow
 
