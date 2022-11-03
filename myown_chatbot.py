@@ -10,8 +10,7 @@ interpreter = RasaNLUInterpreter("models/nlu/default/horoscopebot/")
 MODEL_PATH = "models/dialogue"
 action_endpoint = EndpointConfig(url="https://horoscopebot1212-actions.herokuapp.com/webhook")
 
-agent = Agent.load(MODEL_PATH, interpreter=interpreter, action_endpoint=
-action_endpoint)
+agent = Agent.load(MODEL_PATH, interpreter=interpreter, action_endpoint=action_endpoint)
 
 
 class MyNewInput(RasaChatInput):
