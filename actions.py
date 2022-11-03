@@ -14,7 +14,7 @@ class GetTodaysHoroscope(Action):
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
         user_horoscope_sign = tracker.get_slot('horoscope_sign')
-        base_url = "http://horoscope-api.herokuapp.com/horoscope/{day}/{sign}"
+        base_url = "https://horoscopebot1.herokuapp.com/horoscope/{day}/{sign}"
         url = base_url.format(**{'day': "today", 'sign': user_horoscope_sign})
         # http://horoscope-api.herokuapp.com/horoscope/today/capricorn
         res = requests.get(url)
