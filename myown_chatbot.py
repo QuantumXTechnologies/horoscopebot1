@@ -8,9 +8,9 @@ from rasa_core.utils import EndpointConfig
 # load your trained agent
 interpreter = RasaNLUInterpreter("models/nlu/default/horoscopebot/")
 MODEL_PATH = "models/dialogue"
-action_endpoint = EndpointConfig(url="https://horoscopebot1212-actions.herokuapp.com/webhook")
+action_endpoint = EndpointConfig(url="https://horoscopebot1.herokuapp.com/webhook")
 
-agent = Agent.load(MODEL_PATH, interpreter=interpreter, action_endpoint=action_endpoint)
+agent = Agent.load(MODEL_PATH, interpreter=interpreter, action_endpoint=action_endpoint )
 
 
 class MyNewInput(RasaChatInput):
@@ -22,7 +22,7 @@ class MyNewInput(RasaChatInput):
             return None
 
 
-input_channel = MyNewInput(url='https://horoscopebot1212.herokuapp.com')
+input_channel = MyNewInput(url='https://horoscopebot1.herokuapp.com')
 # set serve_forever=False if you want to keep the server running
 s = agent.handle_channels([input_channel], int(os.environ.get('PORT', 5004)), serve_forever=True)
 
